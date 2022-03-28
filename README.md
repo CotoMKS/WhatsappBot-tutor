@@ -1,6 +1,6 @@
 # WhatsappBot-tutor
 
-- Download template ini
+- Download [template ini](https://github.com/CotoMKS/WhatsappBot-tutor/archive/refs/heads/master.zip)
 - Extract file zip-nya
 - buka folder yang sudah di-extract
 
