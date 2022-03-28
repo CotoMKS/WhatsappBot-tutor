@@ -1,0 +1,16 @@
+{
+  "name": "kasumi-botwa",
+  "version": "1.0.0",
+  "description": "Bot Whatsapp untuk para wibu stress, gak hoki dan miskin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^6.2.8",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.16.4"
+  }
+}
