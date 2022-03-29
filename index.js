@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 const mongoose = require("mongoose");
 const qrcode = require("qrcode-terminal");
-const { Client, LegacySessionAuth, Buttons } = require("whatsapp-web.js");
+const { Client, LegacySessionAuth } = require("whatsapp-web.js");
 
 let session_config;
 if (fs.existsSync("./session.json")) {
@@ -53,22 +53,6 @@ commandDir.forEach((f) => {
 client.on("message", async (msg) => {
   const prefix = config.prefix;
   const message = msg.body.toLocaleLowerCase();
-
-  if(message == "p"){
-    const button = new Buttons("Kenapa, yank? :3", [
-      {
-        body: `${prefix}help`
-      },
-      {
-        body: `${prefix}ingfo`
-      },
-      {
-        body: "Gak, Rindu aja...."
-      }
-    ])
-
-    return client.sendMessage(msg.from, button)
-  }
 
   const prefixRegex = new RegExp(`^(${escapeRegex(prefix)})\\s*`);
   if (!prefixRegex.test(message)) return;
